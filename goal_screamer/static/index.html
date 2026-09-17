@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GOAL! — Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>⚽ GOAL!</h1>
+        <p class="sub">Reachy celebrates when your clubs score.</p>
+
+        <section>
+            <h2>Tracked clubs</h2>
+            <ul id="clubs" class="clubs"></ul>
+        </section>
+
+        <section>
+            <h2>Add a club</h2>
+            <div class="row">
+                <select id="league"></select>
+                <select id="team" disabled>
+                    <option>Pick a league first</option>
+                </select>
+                <button id="add" disabled>Add</button>
+            </div>
+            <p id="status" class="status"></p>
+        </section>
+
+        <section>
+            <h2>Test reactions</h2>
+            <div class="row">
+                <button data-test="goal_for">⚽ GOAL!</button>
+                <button data-test="goal_against">😞 Concede</button>
+                <button data-test="kickoff">🟢 Kickoff</button>
+                <button data-test="fulltime">🏁 Full time</button>
+            </div>
+        </section>
+    </main>
+    <script src="static/main.js"></script>
+</body>
+
+</html>

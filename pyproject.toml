@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "goal_screamer"
+version = "0.1.0"
+description = "Reachy Mini screams GOOOAL and dances when your soccer clubs score"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "reachy-mini",
+    "requests",
+    "gTTS",
+]
+keywords = ["reachy-mini-app"]
+
+[project.entry-points."reachy_mini_apps"]
+goal_screamer = "goal_screamer.main:GoalScreamer"
+
+[tool.setuptools]
+package-dir = { "" = "." }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+goal_screamer = ["**/*"] # Also include all non-.py files

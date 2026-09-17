@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+main { max-width: 520px; width: 100%; padding: 24px; }
+h1 { margin: 0; font-size: 32px; }
+.sub { color: #94a3b8; margin-top: 4px; }
+h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.06em; color: #94a3b8; margin: 28px 0 10px; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+select, button {
+  font: inherit;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: inherit;
+}
+button { cursor: pointer; }
+button:hover { background: #334155; }
+button:disabled { opacity: 0.4; cursor: default; }
+.clubs { list-style: none; padding: 0; margin: 0; }
+.clubs li { padding: 8px 0; border-bottom: 1px solid #1e293b; }
+.remove { padding: 2px 8px; font-size: 12px; margin-left: 8px; }
+.status { color: #64748b; min-height: 1.2em; }
+.status.error { color: #f87171; }
